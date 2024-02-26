@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+html {
+	overflow-x: hidden;
+	padding: 0px;
+	margin: 0px
+}
+body{
+	overflow-x: hidden;
+	width: 100%;
+	font-family: "Poppins";
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0px;
+	word-wrap: break-word;
+	font-weight: 400;
+	background-color: #f4f5fe;
+	color: #7d7789;
+}
+h1,h2,h3,h4,h5,h6{color: #333;}
+svg{
+	fill: currentcolor;
+	width: 15px;
+	height: 15px;
+}
+img.svg{
+	width: 15px;
+	height: 15px;
+}
+
+.erling_tm_documentation,
+.erling_tm_documentation *{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	color: #ff451b;
+}
+a:before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 1px;
+	left: 0px;
+	bottom: 2px;
+	background-color: #ff451b;
+	transition: all .3s ease;
+}
+a:hover:before{
+	width: 0;
+}
+.erling_tm_documentation{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+
+.erling_tm_documentation .logo{
+	position: absolute;
+	top: 50px;
+	right: 20px;
+}
+.erling_tm_documentation .logo img{
+	max-width: 120px;
+}
+
+
+.erling_tm_documentation .copyright{
+	position: absolute;
+	z-index: 1;
+	bottom: 50px;
+	right: 20px;
+}
+.erling_tm_documentation .copyright p{
+	color: #fff;
+	font-size: 13px;
+}
+.erling_tm_documentation .copyright p span{
+	opacity: .5;
+}
+.erling_tm_documentation .copyright a{
+	text-decoration: none;
+	color: #fff;
+	transition: all .3s ease;
+}
+.erling_tm_documentation .copyright a:hover{
+	color: #ff451b;
+}
+.erling_tm_documentation .copyright a:before{display: none;}
+.erling_tm_documentation .sidebar{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	height: 100vh;
+	width: 300px;
+	background-color: #333;
+	z-index: 5;
+}
+.erling_tm_documentation .sidebar .sidebar_inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.erling_tm_documentation .sidebar .links{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0px 20px;
+}
+.erling_tm_documentation .sidebar .links ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.erling_tm_documentation .sidebar .links ul li{
+	margin: 0px;
+	float: left;
+	width: 100%;
+	text-align: right;
+	position: relative;
+}
+.erling_tm_documentation .sidebar .links ul li a{
+	text-decoration: none;
+	color: #ddd;
+	font-size: 15px;
+	display: block;
+	padding: 3px 0px;
+	font-family: "Poppins";
+	font-weight: 500;
+	transition: all .3s ease;
+}
+.erling_tm_documentation .sidebar .links ul li a:before{display: none;}
+.erling_tm_documentation .sidebar .links ul li.current a{
+	color: #ff451b;
+}
+.erling_tm_documentation .sidebar .links ul li:hover a{
+	color: #ff451b;
+}
+.erling_tm_documentation .sidebar .links ul li:before{
+	position: absolute;
+	content: "";
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 1px;
+	background-color: rgba(255,255,255,.05);
+}
+.erling_tm_documentation .content{
+	position: relative;
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 150px 50px 50px 350px;
+}
+.erling_tm_documentation .section{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 200px;
+}
+.erling_tm_documentation .intro{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.erling_tm_documentation .intro .item_name{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	padding-bottom: 10px;
+}
+.erling_tm_documentation .intro .item_name h3{
+	font-size: 35px;
+}
+.erling_tm_documentation .intro_list{
+	width: 100%;
+	float: left;
+	padding-top: 20px;
+}
+.erling_tm_documentation .intro_list{
+	width: 100%;
+	float: left;
+}
+.erling_tm_documentation .intro_list li{
+	margin: 0px;
+	list-style-type: none;
+}
+.erling_tm_documentation .main_title{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #333;
+	border-radius: 5px;
+	padding: 10px 50px;
+	margin-bottom: 30px;
+}
+.erling_tm_documentation .main_title h3{
+	color: #fff;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+.erling_tm_documentation .inner_list{
+	width: 100%;
+	float: left;
+	padding-left: 20px;
+}
+.erling_tm_documentation .inner_list{
+	margin: 0px;
+}
+.erling_tm_documentation .text{
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+.erling_tm_documentation .inner_image{
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+.erling_tm_documentation .tutorial_list{
+	width: 100%;
+	float: left;
+}
+.erling_tm_documentation .tutorial_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.erling_tm_documentation .tutorial_list ul li{
+	margin: 0px 0px 70px 0px;
+	width: 100%;
+	float: left;
+}
+.erling_tm_documentation .tutorial_list ul li:last-child{margin-bottom: 0px;}
+.erling_tm_documentation .tutorial_list .tutorial_title{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+.erling_tm_documentation .tutorial_list .tutorial_title h3{
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.erling_tm_documentation .contact_list{
+	width: 100%;
+	float: left;
+}
+.erling_tm_documentation .contact_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.erling_tm_documentation .contact_list ul li{
+	margin: 0px 0px 10px 0px;
+	width: 100%;
+	float: left;
+}
+.erling_tm_documentation .contact_list ul li p{
+	padding-right: 50px;
+	margin-bottom: 10px;
+}
+.erling_tm_documentation .contact_list ul li img{
+	max-width: 120px;
+}
+.erling_tm_documentation .contact_list ul li img.move{
+	position: relative;
+	left: 300px;
+}
+.erling_tm_documentation .contact_list ul li:last-child{margin-bottom: 0px;}
+
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body{
+  scrollbar-width: thin;
+  scrollbar-color: #999 #fff;
+}
+body:-webkit-scrollbar-track {
+  background: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 6px;
+  border: 3px solid #fff;
+}
+.imp{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #FFE9EA;
+	padding: 20px 50px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.success{
+	color: blue;
+}
